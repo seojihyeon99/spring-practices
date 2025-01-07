@@ -27,7 +27,7 @@ public class FileUploadService {
 			}
 			
 			String originFilename = Optional.ofNullable(file.getOriginalFilename()).orElse("");
-			String extName = originFilename.substring(originFilename.lastIndexOf('.') + 1);			
+			String extName = originFilename.substring(originFilename.lastIndexOf('.') + 1);	// 파일 확장자(.png, .pdf 등)
 			String saveFilename = generateSaveFilename(extName); 
 			long fileSize = file.getSize();			
 	

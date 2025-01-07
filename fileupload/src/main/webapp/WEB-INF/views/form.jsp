@@ -12,8 +12,8 @@
 <body>
 	<h1>파일 업로드 예제</h1>
 	<form method="post" action="upload" enctype="multipart/form-data">
-		<label for="id">email:</label> 
-		<input type="text" id="email" name="email" value="kickscar@gmail.com"> 
+		<label for="email">email:</label> 
+		<input type="text" id="email" name="email" value="jihyeon@gmail.com"> 
 		<br><br> 
 		
 		<label for="file">파일:</label> 

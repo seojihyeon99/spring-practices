@@ -12,7 +12,11 @@
 	<mvc:annotation-driven />
 	
 	<!-- mvc url-resource mapping -->
+	<!-- 정적 리소스(이미지)를 URL 경로와 서버의 실제 파일 경로에 매핑. 'file:'로 시작하면 로컬 파일 시스템의 절대 경로를 지정 -->
 	<mvc:resources mapping="/images/**" location="file:/fileupload-files/" />
+	
+	<!-- Multipart Resolver -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.support.StandardServletMultipartResolver" />
 	
 	<!-- View Resolver -->
 	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
